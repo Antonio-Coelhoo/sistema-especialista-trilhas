@@ -1,4 +1,3 @@
-% sistema_corrigido.pl
 :- use_module(base_conhecimento, [trilha/2, perfil/3, pergunta/3]).
 
 :- dynamic resposta/2.
@@ -65,3 +64,4 @@ exibe_resultados([]).
 exibe_resultados([Trilha-Pct | Resto]) :-
     format('Trilha: ~w -- Compatibilidade: ~2f%%~n', [Trilha, Pct]),
     exibe_resultados(Resto).
+
